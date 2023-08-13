@@ -4,8 +4,8 @@ import Fade from 'react-reveal/Fade'
 
 const Contact = () => {
   return (
-    <Fade duration={1500}>
-      <div name="contact" className='text-white w-full h-screen mt-[150px]'>
+    <div name="contact" className='text-white w-full h-screen mt-[150px]'>
+      <Fade duration={1500}>
       <div className='flex justify-center items-center p-4'>
           <form method='POST' action="https://getform.io/f/1cf65667-2d94-4be1-92f9-e28afb33a240" className='flex flex-col text-center items-center'>
               <h1 className='md:text-8xl text-5xl font-bold text-gray-400'> Contact </h1>
@@ -16,6 +16,7 @@ const Contact = () => {
               <button type='onSubmit' className='border-4 border-indigo-300 p-2 md:p-3 mt-5 w-[200px] text-lg mb-5 ease-in-out duration-500 hover:bg-indigo-300 hover:rounded-md hover:text-slate-950 hover:font-semibold'> Let's talk about it </button>
           </form>
       </div>
+      </Fade>
 
       <div className='w-[300px] flex justify-center items-center text-4xl mx-auto md:flex-col md:absolute md:top-[30%] md:left-[-120px]'>
         <a href="https://github.com">
@@ -43,7 +44,6 @@ const Contact = () => {
         </a>
       </div>
     </div>
-    </Fade>
 
   )
 }
