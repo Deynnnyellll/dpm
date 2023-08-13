@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade'
 
 const Contact = () => {
   return (
-    <Fade>
+    <Fade duration={1500}>
       <div name="contact" className='text-white w-full h-screen mt-[150px]'>
       <div className='flex justify-center items-center p-4'>
           <form method='POST' action="https://getform.io/f/1cf65667-2d94-4be1-92f9-e28afb33a240" className='flex flex-col text-center items-center'>

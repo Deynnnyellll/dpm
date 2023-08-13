@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade'
 
 const About = () => {
   return (
-    <Fade>
+    <Fade duration={1500}>
         <div name="about" className='text-white h-auto mt-[150px]'>
             <h1 className='md:text-8xl md:text-left text-center text-5xl font-bold p-3 text-gray-400'> About </h1>
             <div className='flex items-center flex-col'>

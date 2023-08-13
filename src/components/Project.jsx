@@ -3,10 +3,12 @@ import Fade from 'react-reveal/Fade'
 
 const Project = () => {
   return (
-    <div name="project" className='text-white mt-[150px]'>  
+    <div name="project" className='text-white mt-[150px]'>
+      <Fade duration={1500}>
         <h1 className='md:text-8xl text-5xl font-bold p-3 text-gray-400 mb-10 text-center md:text-left'> Project </h1>
+      </Fade>  
         <div className='flex flex-col items-center gap-10 md:flex-row md:flex-wrap md:justify-center md:w-[1300px] mx-auto mb-10'>
-          <Fade>
+          <Fade duration={1500}>
             <div className={container}>
                 <img src='https://drive.google.com/uc?export=download&id=1rjQJBDgjIkuc83mFahiNM574kGT9iTuQ' alt='AI' className={image} />
                 <h1 className='text-sm md:text-xl text-center font-semibold mt-2'> AI - Driven Personal Financial Manager </h1>
