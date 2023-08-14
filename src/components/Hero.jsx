@@ -6,8 +6,8 @@ import Fade from 'react-reveal/Fade'
 
 const Hero = () => {
   return (
-    <Fade duration={1500}>
       <div name="home" className='text-white h-auto mt-5 md:mt-20'>
+        <Fade duration={1500}>  
         <div className='absolute md:top-[29%] md:left-[49%] top-[50%] right-[5%]'>
           <IconBxAtom />
         </div>
@@ -28,8 +28,8 @@ const Hero = () => {
           </div>
           <Image />
           </div>
+          </Fade>
       </div>
-    </Fade>
 
   )
 }
