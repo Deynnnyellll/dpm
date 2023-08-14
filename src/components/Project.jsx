@@ -1,7 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Fade from 'react-reveal/Fade'
+import AI from '../images/AI.gif'
 
 const Project = () => {
+  const [description, setDescription] = useState(true)
+
+  const handleProject = () => {
+    setDescription(!description)
+  }
+
+  const image = 'w-[400px] h-[200px] rounded-md ease-in-out duration-500';
+  const container = 'bg-slate-950 md:w-[400px] md:h-[330px] w-[330px] h-[270px] p-3 rounded-xl flex items-center flex-col ease-in-out duration-500 hover:scale-110 shadow-md shadow-black'
+
   return (
     <div name="project" className='text-white mt-[150px]'>
       <Fade duration={1500}>
@@ -10,10 +20,14 @@ const Project = () => {
       <div className='flex flex-col items-center gap-10 md:flex-row md:flex-wrap md:justify-center md:w-[1300px] mx-auto mb-10'>
       <Fade>
         <div>
-          <div className={container}>
-                  <img src='https://drive.google.com/uc?export=download&id=1rjQJBDgjIkuc83mFahiNM574kGT9iTuQ' alt='AI' className={image} />
-                  <h1 className='text-sm md:text-xl text-center font-semibold mt-2'> AI - Driven Personal Financial Manager </h1>
-                  <div className='flex items-center gap-4'>
+          <div className={container} onClick={handleProject}>
+                  <img src='https://drive.google.com/uc?export=download&id=1rjQJBDgjIkuc83mFahiNM574kGT9iTuQ' alt='AI' className={description ? image : 'hidden'} />
+                  <div className={!description ? "flex items-center justify-between flex-col w-[300px] md:w-full" : "hidden"}>
+                    <img src={AI} alt="AI" className='mt-[10px] mb-[-30px] w-[300px] md:w-full md:h-[200px]' />
+                    <h1 className='text-[9pt] md:text-sm text-justify mt-10 w-[290px] md:w-full md:mt-[55px]'> AI-Driven Personal Financial Manager is an application where it predicts the monthly financial stability of the user through his or her income and expenses</h1>
+                  </div>
+                  <h1 className={description ? 'text-sm md:text-xl text-center font-semibold mt-2' : 'hidden'}> AI - Driven Personal Financial Manager </h1>
+                  <div className={description ? 'flex items-center gap-4' : 'hidden'}>
                     <LanguageUsed language={"Python"} />
                     <LanguageUsed language={"Tkinter"} />
                   </div>
@@ -70,9 +84,6 @@ const Project = () => {
     </div>
   )
 }
-
-const container = 'bg-slate-950 md:w-[400px] md:h-[330px] w-[330px] h-[270px] p-3 rounded-xl flex items-center flex-col ease-in-out duration-500 hover:scale-110 shadow-md shadow-black'
-const image = 'w-[400px] h-[200px] rounded-md'
 
 const LanguageUsed = ({language}) => {
   return (
