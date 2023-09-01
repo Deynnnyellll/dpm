@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import Fade from 'react-reveal/Fade'
 import AI from '../images/AI.gif'
 
+
 const Project = () => {
   const [description, setDescription] = useState(true)
 
@@ -10,14 +11,14 @@ const Project = () => {
   }
 
   const image = 'w-[400px] h-[200px] rounded-md ease-in-out duration-500';
-  const container = 'bg-slate-950 md:w-[400px] md:h-[330px] w-[330px] h-[270px] p-3 rounded-xl flex items-center flex-col ease-in-out duration-500 hover:scale-110 shadow-md shadow-black'
+  const container = 'md:w-[400px] md:h-[330px] w-[310px] h-auto p-3 rounded-lg flex items-center flex-col ease-in-out duration-500 hover:scale-110 shadow-md shadow-slate-500'
 
   return (
     <div name="project" className='text-white mt-[150px]'>
       <Fade duration={1500}>
         <h1 className='md:text-8xl text-5xl font-bold p-3 text-gray-400 mb-10 text-center md:text-left'> Project </h1>
       </Fade>
-      <div className='flex flex-col items-center gap-10 md:flex-row md:flex-wrap md:justify-center md:w-[1300px] mx-auto mb-10'>
+      <div className='flex flex-col items-center gap-10 md:flex-row md:flex-wrap md:justify-center md:w-[1300px] mx-auto mb-10 p-2'>
       <Fade>
         <div>
           <div className={container} onClick={handleProject}>
@@ -26,8 +27,8 @@ const Project = () => {
                     <img src={AI} alt="AI" className='mt-[10px] mb-[-30px] w-[300px] md:w-full md:h-[200px]' />
                     <h1 className='text-[9pt] md:text-sm text-justify mt-10 w-[290px] md:w-full md:mt-[55px]'> AI-Driven Personal Financial Manager is an application where it predicts the monthly financial stability of the user through his or her income and expenses</h1>
                   </div>
-                  <h1 className={description ? 'text-sm md:text-xl text-center font-semibold mt-2' : 'hidden'}> AI - Driven Personal Financial Manager </h1>
-                  <div className={description ? 'flex items-center gap-4' : 'hidden'}>
+                  <h1 className={description ? 'text-sm md:text-xl text-center font-semibold mt-2 duration-300' : 'opacity-0'}> AI - Driven Personal Financial Manager </h1>
+                  <div className={description ? 'flex items-center gap-4 duration-300' : 'opacity-0'}>
                     <LanguageUsed language={"Python"} />
                     <LanguageUsed language={"Tkinter"} />
                   </div>

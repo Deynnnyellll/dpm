@@ -41,6 +41,6 @@ const LanguageIcons = () => {
   )
 }
 
-const imageAttribute = 'md:w-[150px] w-[100px] ease-in-out duration-500 p-5 hover:scale-110';
+const imageAttribute = 'md:w-[150px] w-[100px] ease-in-out duration-500 p-5 hover:scale-110 hover:shadow-xl hover:shadow-slate-500';
 
 export default LanguageIcons

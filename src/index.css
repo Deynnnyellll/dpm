@@ -3,5 +3,8 @@
 @tailwind utilities;
 
 body {
-  background-color: #030712;
+  background-image: url(images/background.jpg);
+  background-size: contain;
+  background-color: rgba(3, 7, 18, 0.75);
+  background-blend-mode: color;
 }
