@@ -14,7 +14,7 @@ const Project = () => {
   const container = 'md:w-[400px] md:h-[330px] w-[310px] h-auto p-3 rounded-lg flex items-center flex-col ease-in-out duration-500 hover:scale-110 shadow-md shadow-slate-500'
 
   return (
-    <div name="project" className='text-white mt-[200px]'>
+    <div name="project" className='text-white  mt-[250px] md:mt-[150px]'>
       <Fade duration={1500}>
         <h1 className='md:text-8xl text-5xl font-bold p-3 text-gray-400 mb-10 text-center md:text-left'> Project </h1>
       </Fade>
