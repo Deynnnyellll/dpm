@@ -18,7 +18,7 @@ const Contact = () => {
       </div>
       </Fade>
 
-      <div className='w-[300px] flex justify-center items-center text-4xl mx-auto bottom-0 md:bottom-[30%] md:flex-col md:absolute md:top-[30%] md:left-[-120px]'>
+      <div className='w-[300px] flex justify-center items-center text-4xl mx-auto mb-[-20px] md:mb-0 md:flex-col md:absolute md:top-[30%] md:left-[-120px]'>
         <a href="https://github.com">
           <div className='bg-[#333333] p-3 rounded-tl-2xl md:rounded-tr-2xl md:rounded-tl-none ease-in-out duration-100 hover:translate-y-[-10px] md:hover:translate-y-0 md:hover:translate-x-2'>
             <AiOutlineGithub />
