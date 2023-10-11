@@ -8,13 +8,14 @@ const Navbar = () => {
     const handleNav = () => {
         setNav(!nav)
     };
+
     
   return (
     <div className='text-white flex justify-between items-center h-24 w-max-[1240px] mx-auto px-4 cursor-pointer relative z-50'>
         <h1 className='w-full text-3xl font-bold text-gray-400'> DPM </h1>
 
         <ul className='hidden md:flex'>
-            <li className='p-4 hover:animate-pulse'>
+            <li className='underline p-4 hover:animate-pulse'>
                 <Link to="home" smooth={true} duration={500}>
                     Home
                 </Link>
