@@ -27,8 +27,8 @@ const SpeechToText = () => {
     <form method='POST' action="https://getform.io/f/1cf65667-2d94-4be1-92f9-e28afb33a240" className='flex flex-col text-center items-center'>
             <h1 className='md:text-8xl text-5xl font-bold text-gray-400'> Contact </h1>
             <p className='md:text-4xl text-lg my-4 mb-10 w-[300px] md:w-auto'> Send me a message if you have any inquiries </p>
-            <input type="text" placeholder='Name' name='name' required className='p-2 w-[300px] md:w-[800px] md:p-4 bg-transparent shadow-sm shadow-slate-500 duration-500 hover:shadow-md hover:shadow-slate-500 text-black' />
-            <input type="text" placeholder='Email' name='email' required className='p-2 w-[300px] md:w-[800px] md:p-4 bg-transparent shadow-sm shadow-slate-500 duration-500 hover:shadow-md hover:shadow-slate-500 my-4 text-black' />
+            <input type="text" placeholder='Name' name='name' required className='p-2 w-[300px] md:w-[800px] md:p-4 bg-transparent shadow-sm shadow-slate-500 duration-500 hover:shadow-md hover:shadow-slate-500 text-slate-500' />
+            <input type="text" placeholder='Email' name='email' required className='p-2 w-[300px] md:w-[800px] md:p-4 bg-transparent shadow-sm shadow-slate-500 duration-500 hover:shadow-md hover:shadow-slate-500 my-4 text-slate-500' />
             <textarea 
                 name="message" 
                 rows="10" 

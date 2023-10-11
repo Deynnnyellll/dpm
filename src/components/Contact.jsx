@@ -16,9 +16,9 @@ const Contact = () => {
           <form method='POST' action="https://getform.io/f/1cf65667-2d94-4be1-92f9-e28afb33a240" className='flex flex-col text-center items-center'>
             <h1 className='md:text-8xl text-5xl font-bold text-gray-400'> Contact </h1>
             <p className='md:text-4xl text-lg my-4 mb-10 w-[300px] md:w-auto'> Send me a message if you have any inquiries </p>
-            <input type="text" placeholder='Name' name='name' required className='p-2 w-[300px] md:w-[800px] md:p-4 bg-transparent shadow-sm shadow-slate-500 duration-500 hover:shadow-md hover:shadow-slate-500 text-black' />
-            <input type="text" placeholder='Email' name='email' required className='p-2 w-[300px] md:w-[800px] md:p-4 bg-transparent shadow-sm shadow-slate-500 duration-500 hover:shadow-md hover:shadow-slate-500 my-4 text-black' />
-            <textarea name="message" id="" rows="10" placeholder='Message' required className='bg-transparent shadow-sm shadow-slate-500 duration-500 hover:shadow-md hover:shadow-slate-500 p-2 md:p-4 text-black md:w-[800px] w-[300px] text-xl'></textarea>
+            <input type="text" placeholder='Name' name='name' required className='p-2 w-[300px] md:w-[800px] md:p-4 bg-transparent shadow-sm shadow-slate-500 duration-500 hover:shadow-md hover:shadow-slate-500 text-slate-500' />
+            <input type="text" placeholder='Email' name='email' required className='p-2 w-[300px] md:w-[800px] md:p-4 bg-transparent shadow-sm shadow-slate-500 duration-500 hover:shadow-md hover:shadow-slate-500 my-4 text-slate-500' />
+            <textarea name="message" id="" rows="10" placeholder='Message' required className='bg-transparent shadow-sm shadow-slate-500 duration-500 hover:shadow-md hover:shadow-slate-500 p-2 md:p-4 text-slate-500 md:w-[800px] w-[300px] text-xl'></textarea>
             <button type='onSubmit' className='p-2 md:p-3 mt-5 w-[200px] text-lg mb-5 ease-in-out duration-500 hover:bg-indigo-300 hover:rounded-md hover:text-slate-950 hover:font-semibold shadow-sm shadow-slate-500'> Let's talk about it </button>
           </form> :
         
