@@ -22,16 +22,17 @@ const useSpeechRecognition = () => {
             for(let i = event.resultIndex; i < event.results.length; ++i){
                 //for displaying the interim results while the user is still speaking
                 transcripted_text += event.results[i][0].transcript + " ";
-                setText(" " + transcripted_text);
-                //final transcipted text
-                final_transcript += event.results[i][0].transcript + " ";
+                setText("" + transcripted_text);
             }
+
+            //final transcipted text
+            final_transcript = transcripted_text;
 
         };
     }, []);
 
     const startListening = () => {
-        setText("")
+        setText(transcripted_text);
         final_transcript = "";
         setIsListening(true);
         recognition.start();

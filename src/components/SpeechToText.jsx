@@ -6,11 +6,13 @@ import useSpeechRecognition from '../custom/useSpeechRecognition'
 const SpeechToText = () => {
     const [activeMic, setActiveMic] = useState(false)
 
+
     const {
         text,
         startListening,
         stopListening
     } = useSpeechRecognition();
+
 
     const handleSpeechToText = () => {
         setActiveMic(!activeMic);
